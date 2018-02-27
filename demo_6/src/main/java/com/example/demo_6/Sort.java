@@ -8,8 +8,15 @@ public class Sort {
             System.out.print(i+" ");
         }*/
 
+        /*int array1[] = { 48, 36, 68, 72, 12, 48, 02};
+        quickSort(array1, 0, 6);*/
+
         int array1[] = { 48, 36, 68, 72, 12, 48, 02};
-        quickSort(array1, 0, 6);
+        //insertSort(array1);
+        selectSort(array1);
+        for(int i : array1){
+            System.out.print(i+" ");
+        }
     }
 
     private static void bubbleSort(int array[]){
@@ -76,5 +83,43 @@ public class Sort {
         System.out.print("\n\n");
         quickSort(a,low,left-1);
         quickSort(a,left+1,high);
+    }
+
+    //A：输入数组，len:数组长度
+    private static void insertSort(int A[])
+    {
+        int temp;
+        int len = A.length;
+        for(int i=1;i<len;i++)
+        {
+            int j=i-1;
+            temp=A[i];
+            //查找到要插入的位置
+            while(j>=0&&A[j]>temp)
+            {
+                A[j+1]=A[j];
+                j--;
+            }
+            if(j!=i-1)
+                A[j+1]=temp;
+        }
+    }
+
+    private static void selectSort(int A[])
+    {
+        int len = A.length;
+        int i,j,k;
+        for(i=0;i<len;i++){
+            k=i;
+            for(j=i+1;j<len;j++){
+                if(A[j]<A[k])
+                    k=j;
+            }
+            if(i!=k){
+                A[i]=A[i]+A[k];
+                A[k]=A[i]-A[k];
+                A[i]=A[i]-A[k];
+            }
+        }
     }
 }
