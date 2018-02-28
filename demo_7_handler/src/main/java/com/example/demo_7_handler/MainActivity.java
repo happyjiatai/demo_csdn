@@ -6,6 +6,7 @@ import android.os.Message;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import java.lang.ref.WeakReference;
 
@@ -49,7 +50,15 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             super.run();
-            SystemClock.sleep(20000);
+            for(int i = 0 ; i < 50 ; i ++){
+                Log.d("zjt", "i = " + i);
+                if(mainActivity == null){
+                    Log.d("zjt", "the weakreference is null");
+                    return;
+                }
+                SystemClock.sleep(2000);
+            }
+
             Looper.prepare();
             MyHandler handler = new MyHandler(mainActivity);
             handler.sendEmptyMessage(0);
