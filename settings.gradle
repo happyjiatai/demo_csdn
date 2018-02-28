@@ -1,1 +1,1 @@
-include ':app', ':demo_6'
+include ':app', ':demo_6', ':demo_7_memoryleaked'
