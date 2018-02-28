@@ -1,7 +1,10 @@
 package com.example.demo_7_memoryleaked;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import java.lang.ref.WeakReference;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -21,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-    @Override
-    protected void onDestroy() {
+
+    @Override protected void onDestroy() {
         super.onDestroy();
     }
+
 }
