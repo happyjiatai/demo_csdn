@@ -2,7 +2,6 @@ package com.example.demo_7_memoryleaked;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.squareup.leakcanary.RefWatcher;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -25,7 +24,5 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        RefWatcher refWatcher = LeakApplication.getRefWatcher(this);//1
-        refWatcher.watch(this);
     }
 }
