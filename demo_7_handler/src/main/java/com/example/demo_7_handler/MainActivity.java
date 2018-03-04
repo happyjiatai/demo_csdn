@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
                 if(mainActivity == null){
                     Log.d("zjt", "the weakreference is null");
                     return;
+                }else {
+                    Log.d("zjt", "the mainActivity is" + mainActivity);
                 }
                 SystemClock.sleep(2000);
             }
