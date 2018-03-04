@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     class matThread extends Thread{
+        public matThread(){
+            super("matThread");
+        }
+
         @Override
         public void run() {
             super.run();
