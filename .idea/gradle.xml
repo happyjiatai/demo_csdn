@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/demo_7_handler" />
             <option value="$PROJECT_DIR$/demo_7_memoryleaked" />
             <option value="$PROJECT_DIR$/demo_8_mat" />
+            <option value="$PROJECT_DIR$/demo_9_futuretask" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
