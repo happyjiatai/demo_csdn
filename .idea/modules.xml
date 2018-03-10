@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo_7_handler/demo_7_handler.iml" filepath="$PROJECT_DIR$/demo_7_handler/demo_7_handler.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_7_memoryleaked/demo_7_memoryleaked.iml" filepath="$PROJECT_DIR$/demo_7_memoryleaked/demo_7_memoryleaked.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_8_mat/demo_8_mat.iml" filepath="$PROJECT_DIR$/demo_8_mat/demo_8_mat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_9_LockSupport/demo_9_LockSupport.iml" filepath="$PROJECT_DIR$/demo_9_LockSupport/demo_9_LockSupport.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_9_futuretask/demo_9_futuretask.iml" filepath="$PROJECT_DIR$/demo_9_futuretask/demo_9_futuretask.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_csdn.iml" filepath="$PROJECT_DIR$/demo_csdn.iml" />
     </modules>
