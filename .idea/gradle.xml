@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/demo_10_executorservice" />
             <option value="$PROJECT_DIR$/demo_6" />
             <option value="$PROJECT_DIR$/demo_7_handler" />
             <option value="$PROJECT_DIR$/demo_7_memoryleaked" />
