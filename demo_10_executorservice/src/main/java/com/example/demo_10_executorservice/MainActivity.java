@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "simpleTest";
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        shutdown1();
+        awaitTermination();
     }
 
     private void submit1() {
@@ -114,6 +116,115 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "----shutdown1 end---- ");
     }
 
+    private void shutdownNow(){
+        Log.d(TAG, "----shutdown1 begin---- ");
+        ExecutorService executorService = Executors.newFixedThreadPool(1);
+        Log.d(TAG, "----task1 begin---- ");
+        Future future1 = executorService.submit(new Task1());
+
+        Log.d(TAG, "----task2 begin---- ");
+        Future future2 = executorService.submit(new Task2());
+
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Log.d(TAG, "----task3 begin---- ");
+        Future future3 = executorService.submit(new Task3());
+
+        List<Runnable> list = executorService.shutdownNow();
+        Log.d(TAG, "----executorService.shutdownNow---- ");
+
+        for(Runnable runnable : list){
+            Log.d(TAG, "runnable is : " + runnable.toString());
+        }
+
+        Future future4 = null;
+        try {
+            future4 = executorService.submit(new Task4());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+        }
+        try {
+            Log.d(TAG, "the result of shutdown1 is: " + future1.get());
+            Log.d(TAG, "the result of shutdown1 is: " + future2.get());
+        }catch (InterruptedException | ExecutionException ex){
+            ex.printStackTrace();
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+
+//        try {
+//            Log.d(TAG, "the result of shutdown1 is: " + future3.get());
+//        }catch (InterruptedException | ExecutionException ex){
+//            ex.printStackTrace();
+//        }catch (Exception ex){
+//            ex.printStackTrace();
+//        }
+
+        Log.d(TAG, "----shutdown1 end---- ");
+    }
+
+
+    private void awaitTermination(){
+        Log.d(TAG, "----shutdown1 begin---- ");
+        ExecutorService executorService = Executors.newFixedThreadPool(1);
+        Log.d(TAG, "----task1 begin---- ");
+        Future future1 = executorService.submit(new Task1());
+
+        Log.d(TAG, "----task2 begin---- ");
+        Future future2 = executorService.submit(new Task2());
+
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Log.d(TAG, "----task3 begin---- ");
+        Future future3 = executorService.submit(new Task3());
+
+        boolean flag = true;
+        try {
+            flag = executorService.awaitTermination(10000, TimeUnit.MILLISECONDS);
+        } catch (InterruptedException e) {
+            Log.d(TAG, "----executorService.awaitTermination---- " + flag);
+            e.printStackTrace();
+        }
+        Log.d(TAG, "----executorService.shutdownNow---- ");
+
+        Future future4 = null;
+        try {
+            future4 = executorService.submit(new Task4());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+        }
+        try {
+            Log.d(TAG, "the result of shutdown1 is: " + future1.get());
+            Log.d(TAG, "the result of shutdown1 is: " + future2.get());
+            Log.d(TAG, "the result of shutdown1 is: " + future3.get());
+            Log.d(TAG, "the result of shutdown1 is: " + future4.get());
+        }catch (InterruptedException | ExecutionException ex){
+            ex.printStackTrace();
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+
+//        try {
+//            Log.d(TAG, "the result of shutdown1 is: " + future3.get());
+//        }catch (InterruptedException | ExecutionException ex){
+//            ex.printStackTrace();
+//        }catch (Exception ex){
+//            ex.printStackTrace();
+//        }
+
+        Log.d(TAG, "----shutdown1 end---- ");
+    }
+
     private class Task1 implements Callable<String>{
         @Override
         public String call() throws Exception {
@@ -132,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
             for(int i = 0; i< 10; i++){
                 sum += i;
             }
-            Thread.sleep(20000);
+            Thread.sleep(5000);
             return "task2";
         }
     }
