@@ -1,1 +1,1 @@
-include ':app', ':demo_6', ':demo_7_memoryleaked', ':demo_7_handler', ':demo_8_mat', ':demo_9_futuretask', ':demo_9_LockSupport', ':demo_10_executorservice', ':demo_11_singleton'
+include ':app', ':demo_6', ':demo_7_memoryleaked', ':demo_7_handler', ':demo_8_mat', ':demo_9_futuretask', ':demo_9_LockSupport', ':demo_10_executorservice', ':demo_11_singleton', ':demo_12_executors'
