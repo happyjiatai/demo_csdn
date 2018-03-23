@@ -23,7 +23,7 @@ class BanZhuRen{
 }
 
 class Banji{
-    private int numOfStudent  = 56;
+    private int numOfStudent  = 50;
     Banji(int numOfStudent){
         this.numOfStudent = numOfStudent;
     }

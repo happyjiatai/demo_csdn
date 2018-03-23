@@ -16,7 +16,7 @@ public class RunnableTest {
 
 
 class Banji implements Runnable{
-    private int numOfStudent  = 56;
+    private int numOfStudent  = 50;
 
     @Override
     public void run() {
