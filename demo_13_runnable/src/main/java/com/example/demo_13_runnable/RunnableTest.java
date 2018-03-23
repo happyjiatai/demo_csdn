@@ -8,7 +8,6 @@ public class RunnableTest {
 
         BanZhuRen fubanZhuRen = new BanZhuRen(banji);
         System.out.println("the number of banji is :" + fubanZhuRen.addChabanSheng().toString());
-
     }
 }
 
