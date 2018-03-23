@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/demo_10_executorservice" />
             <option value="$PROJECT_DIR$/demo_11_singleton" />
             <option value="$PROJECT_DIR$/demo_12_executors" />
+            <option value="$PROJECT_DIR$/demo_13_runnable" />
             <option value="$PROJECT_DIR$/demo_6" />
             <option value="$PROJECT_DIR$/demo_7_handler" />
             <option value="$PROJECT_DIR$/demo_7_memoryleaked" />
