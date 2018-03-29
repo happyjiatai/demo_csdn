@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo_14_rxjava/demo_14_rxjava.iml" filepath="$PROJECT_DIR$/demo_14_rxjava/demo_14_rxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_14_rxjava_in_android/demo_14_rxjava_in_android.iml" filepath="$PROJECT_DIR$/demo_14_rxjava_in_android/demo_14_rxjava_in_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_15_rxjava_names/demo_15_rxjava_names.iml" filepath="$PROJECT_DIR$/demo_15_rxjava_names/demo_15_rxjava_names.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_19_static/demo_19_static.iml" filepath="$PROJECT_DIR$/demo_19_static/demo_19_static.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_6/demo_6.iml" filepath="$PROJECT_DIR$/demo_6/demo_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_7_handler/demo_7_handler.iml" filepath="$PROJECT_DIR$/demo_7_handler/demo_7_handler.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_7_memoryleaked/demo_7_memoryleaked.iml" filepath="$PROJECT_DIR$/demo_7_memoryleaked/demo_7_memoryleaked.iml" />
