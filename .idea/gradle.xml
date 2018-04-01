@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/demo_19_static" />
             <option value="$PROJECT_DIR$/demo_20_aidl_client" />
             <option value="$PROJECT_DIR$/demo_20_aidl_server" />
+            <option value="$PROJECT_DIR$/demo_21_custom_view" />
             <option value="$PROJECT_DIR$/demo_6" />
             <option value="$PROJECT_DIR$/demo_7_handler" />
             <option value="$PROJECT_DIR$/demo_7_memoryleaked" />
