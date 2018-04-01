@@ -76,7 +76,7 @@ public class HelloWorldTextView extends View {
             mPaint.getTextBounds(mTextList.get(i), 0, mTextList.get(i).length(), mBound);
             Log.v(TAG, "mBound.h:"+mBound.height());
             Log.v(TAG, "在X:" + (getWidth() / 2 - mBound.width() / 2)+"  Y:"+(getPaddingTop() + (mBound.height() *i))+"  绘制："+mTextList.get(i));
-            canvas.drawText(mTextList.get(i), (getPaddingLeft()), (getPaddingTop() + (mBound.height() *i)), mPaint);
+            canvas.drawText(mTextList.get(i), (getWidth() - mBound.width() - getPaddingLeft()), (getPaddingTop() + (mBound.height() *i)), mPaint);
         }
     }
 
