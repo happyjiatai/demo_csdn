@@ -27,7 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             myAidlInterface = IMyAidlInterface.Stub.asInterface(service);
-            Log.d(TAG, "onServiceConnected" + myAidlInterface);
+            Log.d(TAG, "onServiceConnected " + myAidlInterface);
+            try {
+                throw new RuntimeException("jiatai");
+            }catch (Exception ex){
+                ex.printStackTrace();
+            }
         }
 
         @Override
@@ -63,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(this, "unbind service", Toast.LENGTH_SHORT).show();
                     flag = false;
                     btnBindService.setText("bind");
+                    txResult.setText("the service has unbind");
                 }
                 break;
             case R.id.button2:
@@ -91,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void unbindMyService() {
+        myAidlInterface = null;
         unbindService(connection);
     }
 }
