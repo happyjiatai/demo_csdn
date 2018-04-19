@@ -34,5 +34,9 @@ public class MyClass {
         arrayList.add(null);
         System.out.println(arrayList.size());
         System.out.println(arrayList);
+
+        arrayList.add(2,22);
+        System.out.println(arrayList.size());
+        System.out.println(arrayList);
     }
 }
