@@ -28,6 +28,7 @@
             <option value="$PROJECT_DIR$/demo_28_HashTable" />
             <option value="$PROJECT_DIR$/demo_29_ReentrantLock" />
             <option value="$PROJECT_DIR$/demo_33_broadcast_parallel" />
+            <option value="$PROJECT_DIR$/demo_42_androidprofiler_cpu" />
             <option value="$PROJECT_DIR$/demo_42_startforegroundservice" />
             <option value="$PROJECT_DIR$/demo_6" />
             <option value="$PROJECT_DIR$/demo_7_handler" />

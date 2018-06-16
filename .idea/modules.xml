@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo_28_HashTable/demo_28_HashTable.iml" filepath="$PROJECT_DIR$/demo_28_HashTable/demo_28_HashTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_29_ReentrantLock/demo_29_ReentrantLock.iml" filepath="$PROJECT_DIR$/demo_29_ReentrantLock/demo_29_ReentrantLock.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_33_broadcast_parallel/demo_33_broadcast_parallel.iml" filepath="$PROJECT_DIR$/demo_33_broadcast_parallel/demo_33_broadcast_parallel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_42_androidprofiler_cpu/demo_42_androidprofiler_cpu.iml" filepath="$PROJECT_DIR$/demo_42_androidprofiler_cpu/demo_42_androidprofiler_cpu.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_42_startforegroundservice/demo_42_startforegroundservice.iml" filepath="$PROJECT_DIR$/demo_42_startforegroundservice/demo_42_startforegroundservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_6/demo_6.iml" filepath="$PROJECT_DIR$/demo_6/demo_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_7_handler/demo_7_handler.iml" filepath="$PROJECT_DIR$/demo_7_handler/demo_7_handler.iml" />
