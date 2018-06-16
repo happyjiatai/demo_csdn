@@ -11,7 +11,7 @@ public class BroadcastTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_broadcast_test);
         Intent intent = new Intent("com.jiatai.broadcast.ordered");
-        //intent.setClassName("com.example.demo_33_broadcast_parallel","BroadcastTestActivity");
+        //intent.setPackage("com.example.demo_33_broadcast_parallel");
         sendOrderedBroadcast(intent, null);
     }
 }
