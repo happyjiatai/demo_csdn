@@ -4,14 +4,42 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "jiatai";
+    private static final String TAG = "bluetoothzipaigan";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button btn = findViewById(R.id.button);
+        btn.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                Log.d(TAG, "Button OnKeyListener : "+ keyCode);
+                if (KeyEvent.KEYCODE_VOLUME_UP == keyCode) {
+                   return true;
+                }
+                return false;
+            }
+        });
+        //btn.setFocusable(true);
+
+        EditText editText= findViewById(R.id.editText);
+        editText.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                Log.d(TAG, "editText OnKeyListener : "+ keyCode);
+                if (KeyEvent.KEYCODE_VOLUME_UP == keyCode) {
+                    return true;
+                }
+                return false;
+            }
+        });
+        editText.setFocusable(true);
     }
 
     @Override
