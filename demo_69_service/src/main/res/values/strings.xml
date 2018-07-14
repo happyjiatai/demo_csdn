@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Demo_69_service</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
