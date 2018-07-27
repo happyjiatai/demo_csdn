@@ -28,14 +28,14 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.d(TAG, "onCreate", new RuntimeException());
+        Log.d(TAG, "onCreate" + Thread.currentThread(), new RuntimeException());
         createNotificationChannel();
 
     }
 
     @Override
     public IBinder onBind(Intent intent) {
-        Log.d(TAG, "onBind", new RuntimeException());
+        Log.d(TAG, "onBind" + Thread.currentThread(), new RuntimeException());
         return Ibind;
     }
 

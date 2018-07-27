@@ -83,6 +83,7 @@ public class HelloWorldTextView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        Log.d("jiatai", "this is a test", new RuntimeException());
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);   //获取宽的模式
         int heightMode = MeasureSpec.getMode(heightMeasureSpec); //获取高的模式
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);   //获取宽的尺寸

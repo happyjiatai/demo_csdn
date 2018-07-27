@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            Log.d(TAG, "onServiceConnected", new RuntimeException());
+            Log.d(TAG, "onServiceConnected" + Thread.currentThread(), new RuntimeException());
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate" + Thread.currentThread());
         setContentView(R.layout.activity_main);
         final Intent serviceIntent = new Intent("android.intent.action.csdnservice");
         serviceIntent.setPackage("com.example.demo_69_service");
