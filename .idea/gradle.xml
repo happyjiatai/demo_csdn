@@ -36,6 +36,7 @@
             <option value="$PROJECT_DIR$/demo_76_countdowntimer" />
             <option value="$PROJECT_DIR$/demo_7_handler" />
             <option value="$PROJECT_DIR$/demo_7_memoryleaked" />
+            <option value="$PROJECT_DIR$/demo_80_onsaveinstancestate" />
             <option value="$PROJECT_DIR$/demo_8_mat" />
             <option value="$PROJECT_DIR$/demo_9_LockSupport" />
             <option value="$PROJECT_DIR$/demo_9_futuretask" />
