@@ -14,7 +14,7 @@ import android.view.View;
 import java.util.ArrayList;
 
 public class HelloWorldTextView extends View {
-    private static final String TAG = "HelloWorldTextView";
+    public static final String TAG = "HelloWorldTextView";
     /**
      * 需要绘制的文字
      */
@@ -69,6 +69,7 @@ public class HelloWorldTextView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        Log.d(TAG, "onDraw", new RuntimeException());
         //绘制文字
         //canvas.drawText(mText, getWidth() / 2 - mBound.width() / 2, getHeight() / 2 + mBound.height() / 2, mPaint);
         //绘制文字
@@ -83,7 +84,7 @@ public class HelloWorldTextView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        Log.d("jiatai", "this is a test", new RuntimeException());
+        Log.d(TAG, "onMeasure", new RuntimeException());
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);   //获取宽的模式
         int heightMode = MeasureSpec.getMode(heightMeasureSpec); //获取高的模式
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);   //获取宽的尺寸
@@ -176,5 +177,11 @@ public class HelloWorldTextView extends View {
                 }
             }
         }
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        Log.d(TAG, "onLayout", new RuntimeException());
     }
 }
