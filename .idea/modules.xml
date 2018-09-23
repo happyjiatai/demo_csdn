@@ -32,7 +32,9 @@
       <module fileurl="file://$PROJECT_DIR$/demo_7_memoryleaked/demo_7_memoryleaked.iml" filepath="$PROJECT_DIR$/demo_7_memoryleaked/demo_7_memoryleaked.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_80_onsaveinstancestate/demo_80_onsaveinstancestate.iml" filepath="$PROJECT_DIR$/demo_80_onsaveinstancestate/demo_80_onsaveinstancestate.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_81_arraylist/demo_81_arraylist.iml" filepath="$PROJECT_DIR$/demo_81_arraylist/demo_81_arraylist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_86_permission/demo_86_permission.iml" filepath="$PROJECT_DIR$/demo_86_permission/demo_86_permission.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_8_mat/demo_8_mat.iml" filepath="$PROJECT_DIR$/demo_8_mat/demo_8_mat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_96_activitystandardmode/demo_96_activitystandardmode.iml" filepath="$PROJECT_DIR$/demo_96_activitystandardmode/demo_96_activitystandardmode.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_9_LockSupport/demo_9_LockSupport.iml" filepath="$PROJECT_DIR$/demo_9_LockSupport/demo_9_LockSupport.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_9_futuretask/demo_9_futuretask.iml" filepath="$PROJECT_DIR$/demo_9_futuretask/demo_9_futuretask.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_csdn.iml" filepath="$PROJECT_DIR$/demo_csdn.iml" />
