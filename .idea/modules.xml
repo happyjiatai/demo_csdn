@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo_14_rxjava_in_android/demo_14_rxjava_in_android.iml" filepath="$PROJECT_DIR$/demo_14_rxjava_in_android/demo_14_rxjava_in_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_15_rxjava_names/demo_15_rxjava_names.iml" filepath="$PROJECT_DIR$/demo_15_rxjava_names/demo_15_rxjava_names.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_163_anr_test/demo_163_anr_test.iml" filepath="$PROJECT_DIR$/demo_163_anr_test/demo_163_anr_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_164_receiver_application/demo_164_receiver_application.iml" filepath="$PROJECT_DIR$/demo_164_receiver_application/demo_164_receiver_application.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_19_static/demo_19_static.iml" filepath="$PROJECT_DIR$/demo_19_static/demo_19_static.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_20_aidl_client/demo_20_aidl_client.iml" filepath="$PROJECT_DIR$/demo_20_aidl_client/demo_20_aidl_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_20_aidl_server/demo_20_aidl_server.iml" filepath="$PROJECT_DIR$/demo_20_aidl_server/demo_20_aidl_server.iml" />
