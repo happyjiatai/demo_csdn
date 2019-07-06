@@ -1,11 +1,10 @@
 package com.example.demo_7_handler;
 
+import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 
 import java.lang.ref.WeakReference;
@@ -46,18 +45,16 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void run() {
-            MainActivity mainActivity = mActivity.get();
-            if (mainActivity == null) {
-               return;
-            }
             super.run();
             for(int i = 0 ; i < 500 ; i ++){
                 Log.d("zjt", "i = " + i);
+                MainActivity mainActivity = mActivity.get();
                 if(mainActivity == null){
                     Log.d("zjt", "the weakreference is null");
                     return;
                 }else {
                     Log.d("zjt", "the mainActivity is" + mainActivity);
+                    mainActivity = null;
                 }
                 SystemClock.sleep(2000);
             }

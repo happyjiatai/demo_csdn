@@ -5,13 +5,16 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_10_executorservice/demo_10_executorservice.iml" filepath="$PROJECT_DIR$/demo_10_executorservice/demo_10_executorservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_111_handleiswhose/demo_111_handleiswhose.iml" filepath="$PROJECT_DIR$/demo_111_handleiswhose/demo_111_handleiswhose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_116_socket/demo_116_socket.iml" filepath="$PROJECT_DIR$/demo_116_socket/demo_116_socket.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_11_singleton/demo_11_singleton.iml" filepath="$PROJECT_DIR$/demo_11_singleton/demo_11_singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_12_executors/demo_12_executors.iml" filepath="$PROJECT_DIR$/demo_12_executors/demo_12_executors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_137_switchtest/demo_137_switchtest.iml" filepath="$PROJECT_DIR$/demo_137_switchtest/demo_137_switchtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_13_runnable/demo_13_runnable.iml" filepath="$PROJECT_DIR$/demo_13_runnable/demo_13_runnable.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_13_runnable_levelUp/demo_13_runnable_levelUp.iml" filepath="$PROJECT_DIR$/demo_13_runnable_levelUp/demo_13_runnable_levelUp.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_14_rxjava/demo_14_rxjava.iml" filepath="$PROJECT_DIR$/demo_14_rxjava/demo_14_rxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_14_rxjava_in_android/demo_14_rxjava_in_android.iml" filepath="$PROJECT_DIR$/demo_14_rxjava_in_android/demo_14_rxjava_in_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_15_rxjava_names/demo_15_rxjava_names.iml" filepath="$PROJECT_DIR$/demo_15_rxjava_names/demo_15_rxjava_names.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_163_anr_test/demo_163_anr_test.iml" filepath="$PROJECT_DIR$/demo_163_anr_test/demo_163_anr_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_19_static/demo_19_static.iml" filepath="$PROJECT_DIR$/demo_19_static/demo_19_static.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_20_aidl_client/demo_20_aidl_client.iml" filepath="$PROJECT_DIR$/demo_20_aidl_client/demo_20_aidl_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_20_aidl_server/demo_20_aidl_server.iml" filepath="$PROJECT_DIR$/demo_20_aidl_server/demo_20_aidl_server.iml" />
